@@ -24,87 +24,81 @@ st.set_page_config(
     layout="centered"
 )
 
+
 # ------------------------------------------------
 # PROFESSIONAL WEBSITE THEME
 # ------------------------------------------------
 
 st.markdown("""
 <style>
+/* Light background */
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background-color: #F4F8FC !important;
+}
 
-    /* Main background */
-    .stApp {
-        background-color: #F4F8FC;
-    }
+/* Main title and section headings */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp [data-testid="stHeader"] {
+    color: #123B5D !important;
+}
 
-    /* Main content area */
-    .main {
-        background-color: #F4F8FC;
-    }
+/* Main title */
+.stApp h1 {
+    text-align: center !important;
+    font-weight: 700 !important;
+}
 
-    /* Main title */
-    h1 {
-        color: #123B5D;
-        font-weight: 700;
-        text-align: center;
-    }
+/* Body text */
+.stApp p,
+.stApp label,
+.stApp [data-testid="stWidgetLabel"] p,
+.stApp [data-testid="stMarkdownContainer"] p {
+    color: #334E68 !important;
+}
 
-    /* Section headings */
-    h2 {
-        color: #164E70;
-        font-weight: 650;
-    }
+/* Input fields */
+.stApp input {
+    background-color: #FFFFFF !important;
+    color: #1F2937 !important;
+    -webkit-text-fill-color: #1F2937 !important;
+}
 
-    h3 {
-        color: #21658A;
-        font-weight: 600;
-    }
+/* Dropdown fields */
+.stApp [data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
+    border-color: #B8C9D6 !important;
+}
 
-    /* Normal text */
-    p {
-        color: #334E68;
-    }
+.stApp [data-baseweb="select"] span {
+    color: #1F2937 !important;
+}
 
-    /* Input boxes */
-    .stTextInput input,
-    .stNumberInput input,
-    .stSelectbox div[data-baseweb="select"] {
-        background-color: #FFFFFF;
-        border-radius: 8px;
-    }
+/* Buttons */
+.stApp .stButton > button {
+    background-color: #176B87 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
 
-    /* Buttons */
-    .stButton > button {
-        background-color: #176B87;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 0.6rem 1.2rem;
-        font-weight: 600;
-        width: 100%;
-    }
+.stApp .stButton > button p {
+    color: #FFFFFF !important;
+}
 
-    .stButton > button:hover {
-        background-color: #12566D;
-        color: white;
-    }
+/* Alerts and dividers */
+.stApp [data-testid="stAlert"] {
+    border-radius: 8px !important;
+}
 
-    /* Information / success boxes */
-    [data-testid="stAlert"] {
-        border-radius: 8px;
-    }
-
-    /* Divider */
-    hr {
-        border: none;
-        border-top: 1px solid #D5E2EC;
-        margin: 25px 0;
-    }
-
-    /* Audio player */
-    audio {
-        width: 100%;
-    }
-
+.stApp hr {
+    border-top: 1px solid #D5E2EC !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
