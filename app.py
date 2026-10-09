@@ -118,6 +118,11 @@ st.divider()
 
 st.subheader("Patient Information")
 
+patient_name = st.text_input(
+    "Patient Name",
+    placeholder="Enter patient's full name"
+)
+
 age = st.number_input(
     "Age",
     min_value=18,
